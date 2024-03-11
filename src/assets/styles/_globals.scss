@@ -1,0 +1,20 @@
+@use './variables.scss' as *;
+
+html {
+    font-size: 42px;
+    background-color: $color-background-alt;
+    // color: $color-text;
+    font-family: 'Proxima Nova', 'Arial', 'Helvetica', sans-serif;
+    color: $color-text-primary;
+    font-weight: $weight-text-700;
+  }
+
+  .Proxima-Nova400 {
+    // color: pink;
+    font-weight: $weight-text-400;
+  }
+
+  .Proxima-Nova600 {
+    font-weight: $weight-text-600;
+  }
+  

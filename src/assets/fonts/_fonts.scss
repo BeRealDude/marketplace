@@ -1,0 +1,50 @@
+@mixin uploadFont($file, $format, $family, $weight: 400) {
+    @font-face {
+      font-family: $family;
+      font-weight: $weight;
+      font-display: swap;
+      src: url(#{$file}) format($format);
+    }
+  }
+
+  @include uploadFont(
+  $file: '../fonts/proxima_nova_bold.woff2',
+  $format: 'woff2',
+  $family: 'Proxima Nova',
+  $weight: 700
+);
+
+@include uploadFont(
+  $file: '../fonts/proxima_nova_bold.woff',
+  $format: 'woff',
+  $family: 'Proxima Nova',
+  $weight: 700
+);
+
+@include uploadFont(
+  $file: '../fonts/proxima_nova_regular.woff2',
+  $format: 'woff2',
+  $family: 'Proxima Nova',
+);
+
+@include uploadFont(
+  $file: '../fonts/proxima_nova_regular.woff',
+  $format: 'woff',
+  $family: 'Proxima Nova',
+);
+
+@include uploadFont(
+  $file: '../fonts/proxima_nova_semibold.woff2',
+  $format: 'woff2',
+  $family: 'Proxima Nova',
+  $weight: 600
+);
+
+@include uploadFont(
+  $file: '../fonts/proxima_nova_semibold.woff',
+  $format: 'woff',
+  $family: 'Proxima Nova',
+  $weight: 600
+);
+
+ 
