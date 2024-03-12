@@ -1,12 +1,18 @@
 @use './variables.scss' as *;
+@use './placeholders.scss' as *;
 
 html {
-    font-size: 42px;
-    background-color: $color-background-alt;
-    // color: $color-text;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  }
+
+  body {
     font-family: 'Proxima Nova', 'Arial', 'Helvetica', sans-serif;
+    letter-spacing: 0.3px;
+    background-color: $color-background-alt;
     color: $color-text-primary;
-    font-weight: $weight-text-700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .Proxima-Nova400 {
@@ -18,3 +24,30 @@ html {
     font-weight: $weight-text-600;
   }
   
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    a,
+    button {
+      @extend %indents-reset;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    button {
+      cursor: pointer;
+    }
+  
+    ul,
+    ol {
+      list-style-type: none;
+    }
