@@ -1,4 +1,7 @@
+import Dropdown from './components/Dropdown/Dropdown';
 import Header from "./components/Header/Header";
+import PanelRangeSliders from "./components/PanelRangeSliders/PanelRangeSliders";
+
 
 
 function App() {
@@ -6,6 +9,10 @@ function App() {
   return (
     <>
       <Header />
+      <main>
+        <PanelRangeSliders />
+        <Dropdown />
+      </main>
       </>
   );
 }

@@ -14,7 +14,7 @@ function NavTab() {
     
 
   return (
-    <nav className={styles.tabs}>
+    <div className={styles.tabs}>
       <div className={styles.checkboxContainer}>
         <label
           className={
@@ -97,7 +97,7 @@ function NavTab() {
           <span className={styles.checkboxText}>Concentrate</span>
         </label>
       </div>
-    </nav>
+    </div>
   );
 }
 

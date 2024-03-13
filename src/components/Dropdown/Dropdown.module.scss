@@ -1,0 +1,13 @@
+.btnIconUp {
+    background-image: url('../../assets/icons/icon_arrowUp.svg');
+    width: 12px;
+    height: 7px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    transform: rotate(180deg);
+}
+
+.btnIconDown {
+    transform: none;
+}
