@@ -14,24 +14,24 @@ function App() {
     { id: 4, label: '>50% Sativa' },
   ];
   const optionsMethod = [
-    { id: 1, label: 'Indoor' },
-    { id: 2, label: 'Outdoor' },
-    { id: 3, label: 'Greenhouse' },
-    { id: 4, label: 'Light Deprivation' },
-    { id: 5, label: 'Mixed Light' },
-    { id: 6, label: 'Other' },
+    { id: 5, label: 'Indoor' },
+    { id: 6, label: 'Outdoor' },
+    { id: 7, label: 'Greenhouse' },
+    { id: 8, label: 'Light Deprivation' },
+    { id: 9, label: 'Mixed Light' },
+    { id: 10, label: 'Other' },
   ];
   const optionsSize = [
-    { id: 1, label: 'Flower' },
-    { id: 2, label: 'Pre-Roll Flower' },
-    { id: 3, label: 'Pre-Roll Infused' },
-    { id: 4, label: 'Pre-Roll Leaf' },
-    { id: 5, label: 'Shake' },
-    { id: 6, label: 'Smalls' },
-    { id: 7, label: 'Trim' },
-    { id: 8, label: 'Shake' },
-    { id: 9, label: 'Keef' },
-    { id: 10, label: 'Fresh Frozen' },
+    { id: 11, label: 'Flower' },
+    { id: 12, label: 'Pre-Roll Flower' },
+    { id: 13, label: 'Pre-Roll Infused' },
+    { id: 14, label: 'Pre-Roll Leaf' },
+    { id: 15, label: 'Shake' },
+    { id: 16, label: 'Smalls' },
+    { id: 17, label: 'Trim' },
+    { id: 18, label: 'Shake' },
+    { id: 19, label: 'Keef' },
+    { id: 20, label: 'Fresh Frozen' },
   ];
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [selectedOptionsMethod, setSelectedOptionsMethod] = useState([]);
