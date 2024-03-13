@@ -27,14 +27,17 @@ function BadgeComponent({
   }
 
   return (
-    <div>
-      <span>1034,5 Results</span>
+    <div className={styles.container}>
+      <span className={styles.result}>1034,5 Results</span>
       {isChecked && ''}
       <div className={styles.badgesContainer}>
         {selectedOptions.map(option => (
           <span key={option.id} className={styles.badge}>
             {option.label}
-            <button onClick={() => onDelete(option)}>X</button>
+            <button
+              className={styles.btnDelete}
+              onClick={() => onDelete(option)}
+            ></button>
           </span>
         ))}
       </div>
@@ -42,7 +45,10 @@ function BadgeComponent({
         {selectedOptionsMethod.map(option => (
           <span key={option.id} className={styles.badge}>
             {option.label}
-            <button onClick={() => onDeleteProduct(option)}>X</button>
+            <button
+              className={styles.btnDelete}
+              onClick={() => onDeleteProduct(option)}
+            ></button>
           </span>
         ))}
       </div>
@@ -50,7 +56,10 @@ function BadgeComponent({
         {selectedOptionsSize.map(option => (
           <span key={option.id} className={styles.badge}>
             {option.label}
-            <button onClick={() => onDeleteSize(option)}>X</button>
+            <button
+              className={styles.btnDelete}
+              onClick={() => onDeleteSize(option)}
+            ></button>
           </span>
         ))}
       </div>

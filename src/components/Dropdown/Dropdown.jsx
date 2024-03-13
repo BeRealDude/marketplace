@@ -2,9 +2,6 @@
 import { useState } from 'react';
 import styles from './Dropdown.module.scss';
 
-
-
-
 function Dropdown({
   onOptionToggle,
   selectedOptions,
@@ -36,21 +33,24 @@ function Dropdown({
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>{title}</h3>
-      <button
-        type="button"
-        className={
-          open ? styles.btnIconUp : `${styles.btnIconUp} ${styles.btnIconDown}`
-        }
-        onClick={toggleAccordion}
-      />
-
+      <div className={styles.wrapTitleBtn}>
+        <h3 className={styles.title}>{title}</h3>
+        <button
+          type="button"
+          className={
+            open
+              ? `${styles.btnIconUp} ${styles.btnIconDown}`
+              : styles.btnIconUp
+          }
+          onClick={toggleAccordion}
+        />
+      </div>
       {open && (
-        <div>
+        <div className={styles.wrapList}>
           {options.map(option => (
-            <div key={option.id}>
-                  <input
-                      className={styles.checkbox}
+            <div className={styles.wrapCheckbox} key={option.id}>
+              <input
+                className={styles.checkbox}
                 type="checkbox"
                 id={`option-${option.id}`}
                 checked={selectedOptions.some(
