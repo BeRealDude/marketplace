@@ -1,10 +1,18 @@
-# React + Vite
+# Проект: Marketplace.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
+Тестовое задане от компании SPIKS
 
-Currently, two official plugins are available:
+## Стек технологий
+* Vite
+* React.js
+* SCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Установка и запуск приложения в локальном репозитории
+1. git clone https://github.com/BeRealDude/marketplace
+2. npm i - установить зависимости
+3. npm run dev - запустить приложение
 
-  ### Ссылка на проект: https://berealdude.github.io/marketplace
+### Ссылки на проект:
+* [Репозиторий](https://github.com/BeRealDude/marketplace)
+* [Deploy](https://berealdude.github.io/marketplace)
