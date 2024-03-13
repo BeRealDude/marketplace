@@ -1,22 +1,24 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import styles from './Dropdown.module.scss';
 
-const options = [
-  { id: 1, label: 'Option 1' },
-  { id: 2, label: 'Option 2' },
-  { id: 3, label: 'Option 3' },
-  { id: 4, label: 'Option 4' },
-];
 
-function Dropdown() {
+
+
+function Dropdown({
+  onOptionToggle,
+  selectedOptions,
+  setSelectedOptions,
+  options,
+  title,
+}) {
   const [open, setOpen] = useState(false);
-  const [selectedOptions, setSelectedOptions] = useState([]);
 
   const toggleAccordion = () => {
     setOpen(!open);
   };
 
-  const toggleOption = option => {
+  const handleOptionToggle = option => {
     const isSelected = selectedOptions.some(
       selectedOption => selectedOption.id === option.id,
     );
@@ -29,11 +31,12 @@ function Dropdown() {
     } else {
       setSelectedOptions([...selectedOptions, option]);
     }
+    onOptionToggle(option);
   };
 
   return (
-    <div>
-      <h3>Classification</h3>
+    <div className={styles.container}>
+      <h3 className={styles.title}>{title}</h3>
       <button
         type="button"
         className={
@@ -46,13 +49,14 @@ function Dropdown() {
         <div>
           {options.map(option => (
             <div key={option.id}>
-              <input
+                  <input
+                      className={styles.checkbox}
                 type="checkbox"
                 id={`option-${option.id}`}
                 checked={selectedOptions.some(
                   selectedOption => selectedOption.id === option.id,
                 )}
-                onChange={() => toggleOption(option)}
+                onChange={() => handleOptionToggle(option)}
               />
               <label htmlFor={`option-${option.id}`}>{option.label}</label>
             </div>
