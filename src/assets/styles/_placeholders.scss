@@ -1,0 +1,7 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+%indents-reset {
+    margin: 0;
+    padding: 0;
+}

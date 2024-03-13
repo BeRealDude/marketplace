@@ -1,0 +1,73 @@
+.tabs {
+  margin-left: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.checkboxContainer {
+  width: 115px;
+  height: 48px;
+  background-color: #353542;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(132, 213, 44, 0.3607843137);
+  border-left: 1px solid rgba(132, 213, 44, 0.3607843137);
+  border-right: 1px solid rgba(132, 213, 44, 0.3607843137);
+}
+
+.checkboxContainer2 {
+width: 125px;
+}
+
+.checkboxContainer3 {
+width: 164px;
+}
+
+.checkboxContainer4 {
+width: 175px;
+}
+
+.checkbox {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  cursor: pointer;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(132, 213, 44, 0.1607843137);
+
+   background-image: url('../../assets/icons/Icon_tab.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-y: center;
+  background-position-x: 23px;
+}
+
+
+.checkbox:hover {
+    box-shadow: 0px 4px 16px 2px rgba(132, 213, 44, 0.2);
+    background-color: #212129;
+    opacity: .6;
+}
+
+.checkboxChecked {
+    box-shadow: 0px 4px 16px 2px rgba(132, 213, 44, 0.2);
+    background-color: #212129;
+}
+
+
+.checkboxInput {
+  appearance: none;
+}
+
+.checkboxText {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.3px;
+  letter-spacing: 0.16px;
+  margin-top: 2px;
+}
